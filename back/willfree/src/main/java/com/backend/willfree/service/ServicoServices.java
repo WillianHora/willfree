@@ -16,9 +16,15 @@ public class ServicoServices {
         return servicoRepositorio.findAll();
     }
 
-    public List<Servico> buscarServicosPagamentoPendente(){
+   
+     public List<Servico> buscarServicosPagamentoPendente(){
         return servicoRepositorio.buscarServicosPagamentoPendente();
     }
+
+    public List<Servico> buscarServicosCancelados(){
+        return servicoRepositorio.buscarServicosCancelados();
+    }
+
 
 
     public Servico inserir(Servico servico){
@@ -39,7 +45,7 @@ public class ServicoServices {
         return servicoRepositorio.saveAndFlush(servico);
     }
 
-    public void exluir(Long id){
+    public void excluir(Long id){
         Servico servico = servicoRepositorio.findById(id).get();
         servicoRepositorio.delete(servico);
     }

@@ -14,4 +14,8 @@ public interface ServicoRepositorio extends  JpaRepository <Servico,Long>{
     List<Servico> buscarServicosPagamentoPendente();
 
     
+    @Query("select s from Servico s where s.status = 'cancelado'")
+    List<Servico> buscarServicosCancelados();
+
+    
 }
