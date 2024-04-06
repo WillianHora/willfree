@@ -4,11 +4,10 @@ import com.backend.willfree.entity.Servico;
 import com.backend.willfree.repository.ServicoRepositorio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
-@Service
-public class ServicoServices {
+    @Service
+    public class ServicoServices {
     @Autowired
     private ServicoRepositorio servicoRepositorio;
 
