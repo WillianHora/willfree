@@ -22,7 +22,7 @@ public class ServicoControle {
     @Autowired
     private ServicoServices servicoService;
 
-    @GetMapping("/")
+    @GetMapping("/todos")
     public List<Servico> buscarTodos(){
         return servicoService.buscarTodos();
     }
@@ -37,13 +37,13 @@ public class ServicoControle {
         return servicoService.buscarServicosCancelados();
     }
     
-    @PostMapping("/")
+    @PostMapping("/inserir")
     public Servico inserir(@RequestBody Servico servico){
         return servicoService.inserir(servico);
     }
 
 
-    @PutMapping("/")
+    @PutMapping("/alterar")
     public Servico alterar(@RequestBody Servico servico){
         return servicoService.alterar(servico);
     }
