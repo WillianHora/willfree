@@ -13,3 +13,7 @@
   <li>Aplicação utilizando spring</li>
   <li>Testes em todos end-points</li>
 </ul>
+
+<h2>Créditos</h2>
+<p>Frank Cardoso (https://www.youtube.com/watch?v=Sun4wXH88V4)</p>
+<p>Wallef Igor (https://github.com/wvll3f)</p>
