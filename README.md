@@ -5,7 +5,7 @@
 <p>Bem... Nunca tinha parado para realizar um projeto em Java, curti bastante mesmo não entendedo grande parte das coisas que funciona, mas tomei a iniciativa graças a um amigo que me motivou bastante a pegar código na prática (Wallef Igor, thanks manito), estou cursando na Alura introdução a Java e refinar minhas habilidades e resolver as pendencias com a linguagem. Aprendi CRUD, Classes, end points... Hm? mais alguma coisa? Acho que não, pude refletir bastante sobre métodos como POST, GET ETC</p>
 
 <h1>O que foi feito?</h1>
-<p>Como gosto de simular a vida real, repliquei tudo que aprendi a respeito de servidores, hospedagem, protocolos de comunicação</p>
+<p>Como gosto de simular a vida real, repliquei tudo que aprendi a respeito de servidores, protocolos de comunicação, Mysql</p>
 
 <ul>
   <li>Instalação Ubuntu Server</li>
