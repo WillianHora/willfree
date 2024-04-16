@@ -2,6 +2,9 @@ package com.backend.willfree.service;
 
 import com.backend.willfree.entity.Servico;
 import com.backend.willfree.repository.ServicoRepositorio;
+
+import jakarta.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
@@ -44,8 +47,8 @@ import java.util.List;
         return servicoRepositorio.saveAndFlush(servico);
     }
 
+    @Transactional
     public void excluir(Long id){
-        Servico servico = servicoRepositorio.findById(id).get();
-        servicoRepositorio.delete(servico);
+        servicoRepositorio.deleteById(id);
     }
 }
