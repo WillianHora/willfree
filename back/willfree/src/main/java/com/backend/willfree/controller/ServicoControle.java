@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.backend.willfree.entity.Servico;
 import com.backend.willfree.service.ServicoServices;
 
-import jakarta.websocket.server.PathParam;
+
 
 
 @RestController
@@ -27,16 +27,6 @@ public class ServicoControle {
         return servicoService.buscarTodos();
     }
 
-    @GetMapping("/pagamentoPendente")
-    public List<Servico> buscarServicosPagamentoPendente(){
-        return servicoService.buscarServicosPagamentoPendente();
-    }
-
-    @GetMapping("/cancelados")
-    public List<Servico> buscarServicosCancelados(){
-        return servicoService.buscarServicosCancelados();
-    }
-    
     @PostMapping("/inserir")
     public Servico inserir(@RequestBody Servico servico){
         return servicoService.inserir(servico);
