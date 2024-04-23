@@ -16,7 +16,7 @@ public class Servico {
     private long id;
     private String nomeProduto;
     @Temporal(TemporalType.DATE)
-    private Date dataInicio=new Date();
+    private Date dataOperacao=new Date();
     @Temporal(TemporalType.DATE)
     private Date dataTermino;
     private String descricao;
@@ -31,11 +31,11 @@ public class Servico {
     public Servico() {
     }
     
-    public Servico(long id, String nomeProduto, Date dataInicio, Date dataTermino, String descricao, Double valor,
+    public Servico(long id, String nomeProduto, Date dataOperacao, Date dataTermino, String descricao, Double valor,
             Double valorPago, Date dataPagamento, String status) {
         this.id = id;
         this.nomeProduto = nomeProduto;
-        this.dataInicio = dataInicio;
+        this.dataOperacao = dataOperacao;
         this.dataTermino = dataTermino;
         this.descricao = descricao;
         this.valor = valor;
@@ -57,10 +57,10 @@ public class Servico {
         this.nomeProduto = nomeProduto;
     }
     public Date getDataInicio() {
-        return dataInicio;
+        return dataOperacao;
     }
     public void setDataInicio(Date dataInicio) {
-        this.dataInicio = dataInicio;
+        this.dataOperacao = dataInicio;
     }
     public Date getDataTermino() {
         return dataTermino;
