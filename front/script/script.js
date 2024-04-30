@@ -1,4 +1,4 @@
-const Url = 'http://172.30.2.213:8080/todos';
+const Url = 'http://localhost:8080/todos';
 
 fetch(Url)
   .then(response => {
